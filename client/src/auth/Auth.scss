@@ -1,0 +1,68 @@
+.RegisterLogin {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+
+	.title {
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+
+	.message {
+		margin-bottom: 2rem;
+		font-style: italic;
+
+		&.error {
+			color: red;
+		}
+
+		&.success {
+			color: #3c763d;
+		}
+	}
+	
+	.form {
+		width: 20rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		> div {
+			margin-bottom: 2rem;
+		}
+
+		input, button {
+			width: 100%;
+			background-color: #e6e6e6;
+			border: 1px solid transparent;
+			height: 3rem;
+			border-radius: 3px;
+			padding: 0.5rem 1rem;
+		}
+
+		.submit {
+			background-color: lighten(#403866, 20%);
+
+			&:hover {
+				cursor: pointer;
+				background-color: #403866;
+			}
+		}
+	}
+}
+
+.Redirect {
+    text-align: center;
+}
+
+.SuccessMessage {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}

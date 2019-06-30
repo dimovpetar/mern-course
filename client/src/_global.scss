@@ -1,0 +1,22 @@
+/* stylesheet for global styles */
+
+.smallMarginTop {
+	margin-top: 1rem;
+}
+
+.tinyMarginTop {
+	margin-top: 0.5rem;
+}
+
+.smallMarginEnd {
+	margin-right: 1rem;
+}
+
+.smallMargin {
+	margin: 1rem;
+}
+
+// override loading overlay color
+._loading_overlay_overlay {
+	background: rgba(0, 0 , 0, 0.4);
+}

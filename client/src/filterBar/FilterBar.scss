@@ -1,0 +1,78 @@
+.FilterBar {
+	background-color: #f7f7f7;
+	padding: 1rem 2rem;
+
+	form {
+		background-color: #0098d0;
+		// padding: 0.5rem 1rem;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.col1 {
+			display: flex;
+			justify-content: flex-start;
+			flex: 1;
+		}
+
+		// specific styles fo the form
+		.searchInput {
+			flex: 1;
+			max-width: 30rem;
+			border: 1px solid transparent;
+			height: 2.5rem;
+			border-radius: 3px;
+			margin-right: 1rem;
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+			margin: 0.5rem 1rem;
+		}
+
+		.categoryDropdown {
+			width: 15rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0.5rem 1rem  0.5rem 0;
+		}
+		
+		.searchButton {
+			margin: 0.5rem 1rem;
+		}
+	}
+
+	.additionalFilters {
+		margin-top: 1rem;
+		display: flex;
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			margin-right: 1rem;
+		}
+
+		input {
+			border: 1px solid #d1d1d1;	
+			border-radius: 4px;
+			height: 1.75rem;
+			padding: 0.5rem;
+		}
+
+		.costsCoveredByDropdown {
+			border: 1px solid #d1d1d1;	
+			border-radius: 4px;
+			height: 1.75rem;
+			width: 10rem;
+		}
+	}
+}
+
+.FilterBar {
+	.gridContainer {
+		margin-top: 1rem;
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fill, 10rem);
+	}
+
+}
+

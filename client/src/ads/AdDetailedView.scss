@@ -1,0 +1,122 @@
+.AdDetailedView {
+	.errorMessage {
+		position: absolute;
+  		top: 50%;
+ 		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 2rem;
+	}
+
+	.wrapper {
+		display: flex;
+		padding: 1rem 2rem;
+		justify-content: space-between;
+
+		.content {
+			display: inline-block;
+			width: 60%;
+			padding: 1rem 2rem;
+			border: 1px solid #f0f0f0;
+			background: white;
+
+			.title {
+				margin: 0.5rem 0 1rem;
+			}
+
+			.adPictures {
+				border-bottom: 2px solid #f0f0f0;
+				padding: 0 1rem;
+			}
+
+			.adDetails {
+				border: 1px solid rgb(184, 183, 183);
+				padding: 0.5rem;
+
+				.label {
+					color: #333;
+				}
+			}
+		}
+
+		.contactDetails {
+			display: inline-block;
+			width: 35%;
+
+			.adPrice {
+				position:relative;	
+				height: 4rem;
+				line-height: 4rem;
+				background: #e3ebf0;
+				margin-left: 4rem;
+
+				&::before {
+					content:"";
+					position:absolute;
+					border-bottom: 2rem solid transparent;
+					border-right: 2rem solid #e3ebf0;
+					border-top: 2rem solid transparent;
+					height: 0px;
+					width: 0px;
+					margin-left: -2rem;
+				}
+
+				.priceWrapper {
+					margin: auto;
+					text-align: center;
+
+					.priceLabel {
+						color: #999;
+						margin-right: 10px;
+						font-weight: normal;
+						font-size: 16px;
+						vertical-align: middle;
+					}
+
+					.price {
+						color: #333;
+						font-size: 24px;
+						font-weight: bold;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			.adOwner {
+				margin-left: 2rem;
+				margin-top: 2rem;
+
+				.ownerLabel	{
+					color: #999;
+				}
+
+				.ownerName {
+					color: #333;
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+
+			.phone {
+				margin-left: 2rem;
+				margin-top: 2rem;
+				background: #3b6fb6;
+				padding: 0 1rem;
+				height: 3rem;
+				border-radius: 4px;
+				display: inline-flex;
+
+				i {
+					margin-right: 1rem;
+					font-size: 1.5rem;
+				}
+
+				i, span {
+					color: white;
+					font-weight: bold;
+					line-height: 3rem;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

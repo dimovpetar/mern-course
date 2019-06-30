@@ -1,0 +1,23 @@
+.FilterBarItem {
+	display: flex;
+	align-items: center;
+	width: 10rem;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	i {
+		width: 3rem;
+		line-height: 3rem;
+		text-align:center;
+		background-color: white;
+		border-radius: 50%;
+		font-size: 1.75rem;
+		margin-right: 1rem;
+	}
+
+	&.selected i {
+		background-color: #0098d0;
+	}
+}

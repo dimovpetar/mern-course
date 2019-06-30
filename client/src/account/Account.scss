@@ -1,0 +1,62 @@
+@import "../_variables.scss";
+
+.Account {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: $pagePadding;
+	background: #f7f7f7;
+
+	.title {
+		margin: 0 0 1rem;
+	}
+
+	.container {
+		display: flex;
+		flex: 1; // make the container take up the remaining with from the title
+	
+		.sideMenu {
+			flex: 0 0 10rem;
+			width: 10rem;
+			border: 1px solid #c5d0d7;
+			border-radius: 2px;
+			background: white;
+
+			ul {
+				margin: 0;
+				padding: 1rem 1rem;
+				list-style: none;
+
+				li {
+					margin: 0.5rem 0;
+					color: $lightBlue;
+					cursor: pointer;
+
+					a {
+						text-decoration: none;
+						color: black;
+						width: 100%;
+						display: block;
+					}
+
+					&:hover, &.active {
+						background-color: $lightBlue;
+						a {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	
+		.main {
+			flex: 1;
+			margin-left: 1rem;
+			border: 1px solid #c5d0d7;
+			border-radius: 2px;
+			background: white;
+		}
+	}
+
+	
+}

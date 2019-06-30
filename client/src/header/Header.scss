@@ -1,0 +1,65 @@
+@import "../_variables.scss";
+
+.Header {
+    background-color: white;
+    height: 4rem;
+	border-bottom: 1px solid #f0f0f0;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	align-items: center;
+
+	.homeButton {
+		width: 3rem;
+		line-height: 3rem;
+		text-align:center;
+		border-radius: 50%;
+		font-size: 2.5rem;
+		color: black;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.logIn {
+		margin-right: 1rem;
+		
+		a {
+			text-decoration: none;
+			color: $lightBlue;
+		}
+	
+		&:hover {
+			a {
+				color: #fff;
+			}
+			background-color: $lightBlue;
+		}
+	}
+	
+	.settingsContainer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		.createNewAd {
+			background: #ff8300;
+			border-radius: 3px;
+			color: white;
+			border: none;
+			height: 2rem;
+			font-weight: bold;
+			cursor: pointer;
+
+			&:hover {
+				background: #d1720c;
+			}
+		}
+	}
+}

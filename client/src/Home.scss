@@ -1,0 +1,9 @@
+.Home {
+	padding: 2rem ;
+
+	.gridContainer {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fill, 12rem);
+	}
+}

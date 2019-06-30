@@ -1,0 +1,32 @@
+.MessageForm {
+
+	margin-left: 2rem;
+	margin-top: 2rem;
+	background: white;
+
+	textarea {
+		height: 10rem;
+		width: 100%;
+	}
+
+	.submitButton {
+		margin-top: 1rem;
+		height: 3rem;
+		display: block;
+		border-radius: 4px;
+		background-color: #3b6fb6;
+		color: white;
+		border: none;
+		padding: 12px 16px;
+		font-size: 16px;
+		cursor: pointer;
+
+		&:hover:not(:disabled) {
+			background-color: darken(#3b6fb6, 20%);
+		}
+
+		&:disabled {
+			background-color: lighten(#3b6fb6, 20%);	
+		}	
+	}
+}

@@ -1,0 +1,20 @@
+.HeaderMessages {
+	width: 4rem;
+	font-size: 2rem;
+	color: #ff8300;
+	position: relative;
+	cursor: pointer;
+
+	.counter {
+		font-family: 'Courier New', Courier, monospace;
+		position: absolute;
+		height: 2rem;
+		bottom: 1rem;
+		left: 1.5rem;
+		width: 2rem;
+		text-align: center;
+		line-height: 2rem;
+		font-size: 0.75rem;
+		border-radius: 50%;
+	}
+}

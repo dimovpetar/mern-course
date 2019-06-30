@@ -1,0 +1,16 @@
+{
+	"categories": [
+		{ "key": "", "title": "All", "icon": "th-large"},
+		{ "key": "clothes", "title": "Clothes", "icon": "tshirt"},
+		{ "key": "cars", "title": "Cars", "icon": "car"},
+		{ "key": "furniture", "title": "Furniture", "icon": "chair"},
+		{ "key": "phones", "title": "Phones", "icon": "mobile"},
+		{ "key": "laptops", "title": "Laptops", "icon": "laptop"},
+		{ "key": "tv", "title": "TV", "icon": "tv"},
+		{ "key": "sport", "title": "Sport", "icon": "futbol"},
+		{ "key": "travel", "title": "Travel", "icon": "plane"},
+		{ "key": "garden", "title": "Garden", "icon": "tree"},
+		{ "key": "services", "title": "Services", "icon": "wrench"},
+		{ "key": "giveAway", "title": "Give Away", "icon": "gift"}
+	]
+}

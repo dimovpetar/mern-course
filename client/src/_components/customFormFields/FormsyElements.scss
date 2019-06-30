@@ -1,0 +1,23 @@
+.FormsyElement {
+	position: relative;
+
+	input, textarea {
+		padding: 0.75rem 1rem;
+	}
+
+	input, textarea, .Dropdown {
+		font-size: 1rem;
+		border: 1px solid #ccc;
+		outline: none;
+	}
+
+	span.errorMessage {
+		position: absolute;
+		right: 0;
+		font-style: italic;
+		font-size: 0.75rem;
+		color: red;
+		padding: 5px 8px;
+		z-index: 10;
+	}
+}

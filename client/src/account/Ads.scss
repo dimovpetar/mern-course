@@ -1,0 +1,69 @@
+@import "../_variables.scss";
+
+.Ads {
+	padding: 1rem;
+
+	.header {
+		margin: 0 0 1rem 0;
+	}
+
+	.tabs {
+		a {
+			margin-right: 0.5rem;
+			margin-left: 0.5rem;
+			text-decoration: none;
+			color: $lightBlue;
+
+			&:hover {
+				color: white;
+				background: $lightBlue;
+			}
+			
+			&.active {
+				color: black;
+			}
+		}
+
+		span {
+			color: #c5d0d7;
+		}
+
+		margin-bottom: 0.5rem;
+		border-bottom: 1px solid #c5d0d7;
+	}
+
+	.content {
+		// background: grey;
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 1rem;
+
+		tr {
+			th {
+				// text-align: left;
+			}
+
+			td, th {
+				border-bottom: 1px solid #c5d0d7;
+				padding: 1rem 0;
+				text-align: center;
+			}
+
+			.buttonsWrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				button {
+					width: 8rem;
+					margin: 0.25rem;
+				}
+			}
+
+			img {
+				max-width: 10rem;
+			}
+		}
+		
+	}
+}
