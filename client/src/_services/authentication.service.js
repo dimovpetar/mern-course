@@ -4,7 +4,8 @@ export const authenticationService = {
     login,
 	logout,
 	register,
-	isLoggedIn
+	isLoggedIn,
+	getId
 };
 
 function login(data) {
@@ -39,4 +40,8 @@ function register(data) {
 
 function isLoggedIn() { 
 	return !!localStorage.getItem("currentUser");
+}
+
+function getId() {
+	return JSON.parse(localStorage.getItem("currentUser")).id;
 }

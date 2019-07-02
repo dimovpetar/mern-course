@@ -1,0 +1,42 @@
+$height: 2.75rem;
+
+.Chat {
+	position: relative;
+	height: 100%;
+	padding-bottom: $height;
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+
+		.message {
+			margin: 0.5rem;
+			padding: 0.5rem;
+			
+			&.orange {
+				background: orange;	
+			}
+		
+			&.blue {
+				text-align: right;
+				background: lightblue;
+			}
+		}
+	}
+
+	.reply {
+		width: 100%;
+		position: absolute;
+		bottom: 0.5rem;
+		display: flex;
+
+		.textArea {
+			flex: 1;
+			margin-right: 1rem;
+		}
+
+		.submitButton {
+			flex-basis: 5rem;
+		}
+	}
+}

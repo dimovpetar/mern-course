@@ -1,5 +1,36 @@
+@import "../_variables.scss";
+
 .Messages {
+	padding: 1rem;
+	height: 100%;
+
+	.header {
+		margin: 0 0 1rem 0;
+	}
+
 	table {
 		width: 100%;
+		border-collapse: collapse;
+		margin-top: 1rem;
+
+		td, th {
+			border-bottom: 1px solid #c5d0d7;
+			padding: 1rem 0;
+			text-align: center;
+		}
+
+		.tableRow {
+			cursor: pointer;
+
+			.about {
+				text-decoration: none;
+				color: $lightBlue;
+	
+				&:hover {
+					color: white;
+					background: $lightBlue;
+				}
+			}
+		}
 	}
 }

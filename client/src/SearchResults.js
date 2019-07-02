@@ -35,7 +35,7 @@ class SearchResults extends Component {
 				this.setState({ results: data });
 			})
 			.catch(err => {
-				debugger
+
 			});
 	}
 

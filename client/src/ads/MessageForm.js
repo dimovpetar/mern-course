@@ -20,30 +20,7 @@ class MessageForm extends Component {
 	
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.enableButton = this.enableButton.bind(this);
-		this.disableButton = this.disableButton.bind(this);
-	}
-
-	componentDidMount() {
-		if (messageService.io) {
-			messageService.io.on("messageSent", (data) => {
-				this.setState({
-					isSending: false,
-					message: "Message sent!",
-					isValid: false
-				});
-	
-				this.messageForm.reset();
-			});
-	
-			messageService.io.on("messageFailed", (data) => {
-				this.setState({
-					isSending: false,
-					message: "Sending failed"
-				});
-	
-				this.messageForm.reset();
-			});
-		}
+		this.disableButton = this.disableButton.bind(this);	
 	}
 
 	handleSubmit(formValues) {
@@ -54,10 +31,22 @@ class MessageForm extends Component {
 			isSending: true
 		});
 
-		messageService.io.emit("message", {
+		const data = {
 			message: message,
-			receiverId: adOwnerId
-		});
+			receiverId: adOwnerId,
+			about: this.props.adId,
+			sentAt: Date.now()
+		};
+
+		messageService.io.emit("message", data, function (errorMsg, successMsg) {
+
+			this.setState({
+				isSending: false,
+				message: errorMsg ? errorMsg : "Message sent!"
+			});
+
+			this.messageForm.reset();
+		}.bind(this));
 	}
 
 	enableButton() {

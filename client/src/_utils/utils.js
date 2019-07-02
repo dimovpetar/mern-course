@@ -4,9 +4,7 @@ function debounce(func, wait) {
 
 	return function(...args) {
 		const context = this;
-debugger
 		clearTimeout(timeout);
-		debugger
 		timeout = setTimeout(() => func.apply(context, args), wait);
 	}
 }

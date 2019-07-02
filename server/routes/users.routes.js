@@ -55,6 +55,7 @@ router.post("/users/login", [
 
 			return res.status(200).send({
 				username: instance.username,
+				id: instance._id,
 				token: token
 			});
 		})

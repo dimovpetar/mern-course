@@ -37,14 +37,17 @@ class socketIo {
 				polling: {
 					extraHeaders: {
 						Authorization: `Bearer ${currentUser.token}`
-					}
+					}	
 				}
 			}
 		});
 
-		this._io.on("connect", () => {
-			this._isConnected = true;
-		});
+		this._isConnected = true;
+
+		this._io.on("disconnect", function () {
+			this._isConnected = false;
+			this._connect();
+		}.bind(this));
 	}
 };
 

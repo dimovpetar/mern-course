@@ -44,12 +44,10 @@ export default class Login extends Component {
 
 		authenticationService.login(data)
 			.then(({ data }) => {
-				debugger
 				// redirect the user to the home page
 				this.props.history.push("/");
 			})
 			.catch((error) => {	
-				debugger
 				this.setState({
 					errorReason: error.response.data,
 					isLoading: false

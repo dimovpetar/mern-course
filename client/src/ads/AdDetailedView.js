@@ -82,7 +82,7 @@ class AdDetailedView extends Component {
 								<span className="ownerName">{this.state.ad.createdBy}</span>
 							</div>
 							<div>
-								<MessageForm adOwnerId={this.state.ad.createdById}/>
+								<MessageForm adOwnerId={this.state.ad.createdById} adId={this.state.ad.id}/>
 							</div>
 						</section>
 					</div>	

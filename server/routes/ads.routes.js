@@ -162,7 +162,8 @@ router.get("/ad/:id", function(req, res) {
 				images: instance.images,
 				createdBy: instance.createdBy.username,
 				createdById: instance.createdBy._id,
-				createdAt: instance.createdAt
+				createdAt: instance.createdAt,
+				id: instance._id
 			});
 		})
 		.catch(err => {

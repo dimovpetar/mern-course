@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import "./Header.scss";
 import UserMenu from "./UserMenu";
 import { authenticationService } from "../_services/authentication.service";
-import Messages from "./Messages";
+import MessagesCount from "./MessagesCount";
 
 class Header extends Component {
 	constructor(props) {
@@ -39,7 +39,7 @@ class Header extends Component {
 					}
 					{this.state.isLoggedIn &&
 						<div className="wrapper">
-							<Messages />
+							<MessagesCount />
 							<UserMenu />
 						</div>
 					}
