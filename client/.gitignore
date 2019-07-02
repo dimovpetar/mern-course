@@ -1,1 +1,4 @@
 node_modules
+
+# Output directory after buil
+build

@@ -33,6 +33,7 @@ class CreateAd extends Component {
 			isValid: false,
 			isUploading: false,
 			errorMessage: "",
+			successMessage: "",
 			categories: categories
 		};
 
@@ -123,7 +124,9 @@ class CreateAd extends Component {
 
 		adService.update(params.id, formData)
 			.then(({ data }) => {
-
+				this.setState({
+					successMessage: "Successfuly updated!"
+				});
 			})
 			.catch(err => {
 				this.setState({
@@ -196,6 +199,7 @@ class CreateAd extends Component {
 					ref={(event) => { this.createAdForm = event; }}
 				>
 					<h1 className="header">Create advertisement</h1>
+					<div className="successMessage">{this.state.successMessage}</div>
 					<div className="errorMessage">{this.state.errorMessage}</div>
 					<fieldset>
 						<div className="title row">
